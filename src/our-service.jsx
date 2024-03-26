@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import './our_service_page/our_service_inner.css';
 import OurServiceEcommerce from './our_service_page/our_service_ecommerce.jsx';
-import OurServiceRotateImg from './our_service_page/our_service_rotate_img.js';
+import OurServiceRotateImg from './our_service_page/our_service_rotate_img.jsx';
 import OurServiceInner from './our_service_page/our_service_inner.jsx';
 import OurServiceMobile from './our_service_page/our_service_mobile.jsx';
-import OurServiceUsStaffing from './our_service_page/our_service_us_staffing.js';
-import OurServiceWebDesign from './our_service_page/our_service_web_design.js';
+import OurServiceUsStaffing from './our_service_page/our_service_us_staffing.jsx';
+import OurServiceWebDesign from './our_service_page/our_service_web_design.jsx';
 import DocumentMeta from 'react-document-meta';
 import { Helmet } from "react-helmet";
 import Footer from './footer.jsx';
 import AugmentedInner from './our_service_page/augmented_inner.jsx';
-import SeoInner from './our_service_page/seo.js';
+import SeoInner from './our_service_page/seo.jsx';
 import $ from 'jquery';
 
 const OurServiceInnerConnect = () => {

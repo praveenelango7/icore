@@ -93,25 +93,25 @@ const WebdesignAndDevelopments = () => {
                                     <ul className="custom_ul_service">
                                         <li className="custom_li_service">
                                             <span className="custom_icon_service">
-                                                      <img src={Side_menu} className="custom_img_service"></img>
+                                                      <img src={SideMenu} className="custom_img_service"></img>
                                                   </span>
                                             <Link to="/web-application">Web application development</Link>
                                         </li>
                                         <li className="custom_li_service">
                                             <span className="custom_icon_service">
-                                                      <img src={Side_menu} className="custom_img_service"></img>
+                                                      <img src={SideMenu} className="custom_img_service"></img>
                                                   </span>
                                             <Link to="/mobile-application"> Mobile application development</Link>
                                         </li>
                                         <li className="custom_li_service">
                                             <span className="custom_icon_service">
-                                                      <img src={Side_menu} className="custom_img_service"></img>
+                                                      <img src={SideMenu} className="custom_img_service"></img>
                                                   </span>
                                             <Link to="/our-niche">Our Niche solutions</Link>
                                         </li>
                                         <li className="custom_li_service">
                                             <span className="custom_icon_service">
-                                                      <img src={Side_menu} className="custom_img_service"></img>
+                                                      <img src={SideMenu} className="custom_img_service"></img>
                                                   </span>
                                             <Link to="/digital-marketing">Digital marketing services</Link>
                                         </li>
@@ -135,7 +135,7 @@ const WebdesignAndDevelopments = () => {
                 </div>
             </div><br/>
             <div className="today_contact">
-                <img id="img_logo" alt="not found" src={today_contact}/>
+                <img id="img_logo" alt="not found" src={TodayContact}/>
                 <h3 className="chk">Ready For Your Next IT Project?</h3>
                 <p className="tdy_p">Collaborate With Us You Will Be Satisfied</p>
                 <Link to="/contact-us"  target="_top">
@@ -147,5 +147,5 @@ const WebdesignAndDevelopments = () => {
         );
     };
     
-    export default MobileAndAus;
+    export default WebdesignAndDevelopments;
     

@@ -33,14 +33,14 @@ import Blogs11 from './blogs11.jsx';
 import Blogs12 from './blogs12.jsx';
 import Blogs13 from './blogs13.jsx';
 import Blogs14 from './blogs14.jsx';
-import Webdesign_and_developments from './our_service_drop/web-design.js';
-import Mobile_and_developments from './our_service_drop/mobile_apps_drop.js';
-import Ourniche_and_developments from './our_service_drop/our_niche.js';
-import digital_and_developments from './our_service_drop/digital_mark.js';
+import Webdesign_and_developments from './our_service_drop/web-design.jsx';
+import Mobile_and_developments from './our_service_drop/mobile_apps_drop.jsx';
+import Ourniche_and_developments from './our_service_drop/our_niche.jsx';
+import digital_and_developments from './our_service_drop/digital_mark.jsx';
 import Career from './careers.jsx';
 import { render } from "react-dom";
-import Web_developement_landing from './landing_page/web_developement.js';
-import Mobile_app_Development from './landing_page/mobile_development.js';
+import Web_developement_landing from './landing_page/web_developement.jsx';
+import Mobile_app_Development from './landing_page/mobile_development.jsx';
 
 const AppRouter = () => {
   return (

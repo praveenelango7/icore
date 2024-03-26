@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./web_design.css";
-import Header from "../header.js";
+import Header from "../header.jsx";
 import Footer from "../footer";
 import { Link } from "react-router-dom";
 import SideMenu from "../img_new/our_service_inner/side_menu_logo.png";
@@ -160,7 +160,7 @@ const MobileAndDevelopments = () => {
                       <li className="custom_li_service">
                         <span className="custom_icon_service">
                           <img
-                            src={Side_menu}
+                            src={SideMenu}
                             className="custom_img_service"
                           ></img>
                         </span>
@@ -171,7 +171,7 @@ const MobileAndDevelopments = () => {
                       <li className="custom_li_service">
                         <span className="custom_icon_service">
                           <img
-                            src={Side_menu}
+                            src={SideMenu}
                             className="custom_img_service"
                           ></img>
                         </span>
@@ -183,7 +183,7 @@ const MobileAndDevelopments = () => {
                       <li className="custom_li_service">
                         <span className="custom_icon_service">
                           <img
-                            src={Side_menu}
+                            src={SideMenu}
                             className="custom_img_service"
                           ></img>
                         </span>
@@ -192,7 +192,7 @@ const MobileAndDevelopments = () => {
                       <li className="custom_li_service">
                         <span className="custom_icon_service">
                           <img
-                            src={Side_menu}
+                            src={SideMenu}
                             className="custom_img_service"
                           ></img>
                         </span>
@@ -221,7 +221,7 @@ const MobileAndDevelopments = () => {
         </div>
         <br />
         <div className="today_contact">
-          <img id="img_logo" alt="not found" src={today_contact} />
+          <img id="img_logo" alt="not found" src={TodayContact} />
           <h3 className="chk">Ready For Your Next IT Project?</h3>
           <p className="tdy_p">Collaborate With Us You Will Be Satisfied</p>
           <Link to="/contact-us" target="_top">

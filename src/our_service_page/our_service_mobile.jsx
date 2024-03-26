@@ -5,6 +5,7 @@ import Mobile_Img2 from '../img_new/our_service_inner/mobile_apps/2_m.png';
 import Mobile_Img3 from '../img_new/our_service_inner/mobile_apps/3_m.png';
 import Mobile_Img4 from '../img_new/our_service_inner/mobile_apps/4_m.png';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
 const OurServiceMobile = () => {
     useEffect(() => {

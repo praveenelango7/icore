@@ -35,12 +35,9 @@ import axios from 'axios';
 import ReactGA from 'react-ga';
 
 const validEmailRegex = RegExp(
-  /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-);
-const https = require('https');
-const agent = new https.Agent({  
-   rejectUnauthorized: false
-});
+   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+ );
+ 
 
 const WebDevelopmentLanding = () => {
   useEffect(() => {
@@ -110,7 +107,7 @@ const WebDevelopmentLanding = () => {
     }
 
     setErrorsWeb(errorswebCopy);
-    setValue(value);
+    
   };
 
   const handleOnChange = value => {
@@ -119,6 +116,8 @@ const WebDevelopmentLanding = () => {
     setPhone(value);
     setErrorsWeb(errorswebCopy);
   };
+
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -140,7 +139,8 @@ const WebDevelopmentLanding = () => {
 
     setErrorsWeb(errorswebCopy);
 
-    if (validateForm(errorswebCopy)) {
+    if (!errorswebCopy.fullName && !errorswebCopy.phone && !errorswebCopy.email && !errorswebCopy.message) {
+
       console.log('Valid Form');
       const icoreContactLanding = {
         contactFirstName: fullName,
@@ -161,7 +161,7 @@ const WebDevelopmentLanding = () => {
           'Content-Type': 'application/json',
        
           body: JSON.stringify(icoreContactLanding)
-        })
+        }})
         .then(resp => resp.json())
         .then(() => {
           setButtonText('Submitted');
@@ -259,17 +259,17 @@ const WebDevelopmentLanding = () => {
            <h4 className={"pad-1"}>Get a Free Consultation in Just 12 Hours</h4>
            <p className={'pad-2'}>We are here for your web development needs. Contact us for a FREE consultation or to learn more about our services.</p>
            {/* form start */}
-           <form  noValidate onSubmit={this.handleSubmit}>
+           <form  noValidate onSubmit={handleSubmit}>
               <div className={'dis_flex'}>
                  <div className="form-group">
                     <label>Name:</label>
-                    <input type="text" className="form-control cust_wid_double" id="name"  name='fullName' onChange={this.handleChange} noValidate placeholder="Enter Name"/>
+                    <input type="text" className="form-control cust_wid_double" id="name"  name='fullName' onChange={handleChange} noValidate placeholder="Enter Name"/>
                     {errorsweb.fullName.length > 0 && 
                    <span className='errors_msg_custom'>{errorsweb.fullName}</span>}
                  </div>
                  <div className="form-group">
                     <label>Phone Number:</label>
-                    <ReactPhoneInput className="form-control cust_wid_double"  noValidate defaultCountry={"sg"} value={this.state.phone} onChange={this.handleOnChange} 
+                    <ReactPhoneInput className="form-control cust_wid_double"  noValidate defaultCountry={"sg"} value={this.state.phone} onChange={handleOnChange} 
                     inputExtraProps={{
                     name: 'phone',
                     required: true,
@@ -283,14 +283,14 @@ const WebDevelopmentLanding = () => {
               <div className={'dis_flex'}>
                  <div className="form-group">
                     <label>Email:</label>
-                    <input type="email" className="form-control cust_wid_double" id="name" placeholder="Enter Email" name="email" onChange={this.handleChange} noValidate />
+                    <input type="email" className="form-control cust_wid_double" id="name" placeholder="Enter Email" name="email" onChange={handleChange} noValidate />
                     {errorsweb.email.length > 0 && 
                      <span className='errors_msg_custom'>{errorsweb.email}</span>}
                  </div>
               </div>
               <div className="form-group">
                  <label>Message</label>
-                 <textarea name="issues" className="form-control" id="iq" rows="4" placeholder="Enter your Message" name='message' onChange={this.handleChange} noValidate></textarea>
+                 <textarea className="form-control" id="iq" rows="4" placeholder="Enter your Message" name='message' onChange={handleChange} noValidate></textarea>
                  {errorsweb.message.length > 0 && 
                  <span className='errors_msg_custom'>{errorsweb.message}</span>}
               </div>
@@ -359,7 +359,7 @@ const WebDevelopmentLanding = () => {
      <div className="col-lg-4 col-xs-12 col-md-4 col-sm-6">
         <div className="mobile_app_card">
            <figure className="figure_inside_card">
-              <img src={web_app} alt="iPhone app development" alt="not-found"/>
+              <img src={web_app} alt="iPhone app development"/>
            </figure>
            <h3 className="card_inside_h3">Custom Web Application</h3>
            <p className="text-center">We understand the need to conceive user experiences and customize a future vision. That is why we crack some of the most complex web application development projects 
@@ -519,14 +519,14 @@ const WebDevelopmentLanding = () => {
                  </div>
               </div>
               <div className="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                 <img className="img-circle" src={Tetsti_forte_logo} className={"imag_testilogo"}/>
+                 <img className="img-circle" src={Tetsti_forte_logo} />
               </div>
            </div>
         </div>
         <div className="row">
            <div className="testimonial-part">
               <div className="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-right">
-                 <img className="img-circle" src={Tetsti_scream_logo} className={"imag_testilogo"}/>
+                 <img className="img-circle" src={Tetsti_scream_logo} />
               </div>
               <div className="col-lg-9 col-md-9 col-sm-8 col-xs-12">
                  <div className="comment-box comd_box_ml">
@@ -603,7 +603,7 @@ const WebDevelopmentLanding = () => {
            </div>
            <div className="modal-body p-30per">
             <div className="row">
-            <form  noValidate onSubmit={this.handleSubmitemailsubcribe}>
+            <form  noValidate onSubmit={handleSubmitemailsubcribe}>
                <div className="col-lg-9">
                  <input type="email" className="form-control" id="name" placeholder="Enter Email" name="emailsubcribe" onChange={this.handleChange} noValidate />
                     {errorsweb.emailsubcribe.length > 0 && 

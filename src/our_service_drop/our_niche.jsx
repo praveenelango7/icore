@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './web_design.css';
-import Header from '../header.js';
+import Header from '../header.jsx';
 import Footer from '../footer';
 import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
@@ -103,25 +103,25 @@ const OurnicheAndDevelopments = () => {
                             <ul className="custom_ul_service">
                                 <li className="custom_li_service">
                                     <span className="custom_icon_service">
-                                              <img src={Side_menu} className="custom_img_service"></img>
+                                              <img src={SideMenu} className="custom_img_service"></img>
                                           </span>
                                     <Link to="/web-application">Web application development</Link>
                                 </li>
                                 <li className="custom_li_service">
                                     <span className="custom_icon_service">
-                                              <img src={Side_menu} className="custom_img_service"></img>
+                                              <img src={SideMenu} className="custom_img_service"></img>
                                           </span>
                                     <Link to="/mobile-application"> Mobile application development</Link>
                                 </li>
                                 <li className="custom_li_service">
                                     <span className="custom_icon_service">
-                                              <img src={Side_menu} className="custom_img_service"></img>
+                                              <img src={SideMenu} className="custom_img_service"></img>
                                           </span>
                                     <Link to="/our-niche">Our Niche solutions</Link>
                                 </li>
                                 <li className="custom_li_service">
                                     <span className="custom_icon_service">
-                                              <img src={Side_menu} className="custom_img_service"></img>
+                                              <img src={SideMenu} className="custom_img_service"></img>
                                           </span>
                                     <Link to="/digital-marketing">Digital marketing services</Link>
                                 </li>
@@ -157,5 +157,5 @@ const OurnicheAndDevelopments = () => {
         );
     };
     
-    export default MobileAndAus;
+    export default OurnicheAndDevelopments;
     

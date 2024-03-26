@@ -70,7 +70,7 @@ const checkValidServiceWorker = (swUrl, config) => {
     });
 };
 
-const register = (config) => {
+const Register = (config) => {
   useEffect(() => {
     const registerServiceWorker = () => {
       if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
@@ -116,4 +116,4 @@ const unregister = () => {
   }
 };
 
-export { register, unregister };
+export { Register, unregister };

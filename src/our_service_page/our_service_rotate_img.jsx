@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './our_service_rotate_img.css'
 import $ from 'jquery'
 import Rotate_img1 from '../img_new/our_service_inner/web_apps/1.png'
