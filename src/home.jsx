@@ -19,6 +19,7 @@ import Header_img_new from './img_new/videos/banner22.png';
 import 'react-app-polyfill/ie11';
 import $ from 'jquery';
 
+
 const Home = () => {
     useEffect(() => {
         $(document).ready(function () {

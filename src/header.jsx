@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react';
 import './nav.css';
 import $ from 'jquery';
-import { Link } from 'react-router-dom';
+import { Swiper } from 'jquery'
+import anime from 'animejs';
+import Logo1 from './img_new/header_logo/icore-software.png'
 import Logo2 from './img_new/header_logo/icore-software_new.11.png'
+import Logo1_mobile from './img_new/header_logo/about_bg.png'
+import Contact_us_inner_connect from './contact-us'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Careers from './careers'
 
 const Header = () => {
   useEffect(() => {
