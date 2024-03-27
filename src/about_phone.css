@@ -121,7 +121,6 @@
  }
  .fontawesome-leaf:hover:after{
     animation:ripple 1.3s ease-out 75ms;
-    /* animation: mymove 3s; */
     animation-iteration-count: 20;
     -webkit-animation-iteration-count: 20;
   }
@@ -183,11 +182,10 @@
         margin-top: 27%; */
        border-radius:25px;
         background: transparent;
-        position: relative;
-        /* -webkit-animation: mymove 3s;  
+        position: relative;  
         -webkit-animation-iteration-count: 2; 
         animation: ani_about 4s;
-        animation-iteration-count: infinite;   */
+        animation-iteration-count: infinite;   
   }
   #loading {
     -webkit-animation: ani_about 2s infinite linear;
@@ -213,7 +211,7 @@
 }
 /* bg image css */
 .bg_icore_logo_about_phone{
-    background-image: url("");
+    /* background-image: url(""); */
     background-repeat: no-repeat;
 }
 .mgt_69per{
@@ -267,9 +265,9 @@
         /* margin: -23% 0% 0% 0%;  */
         display: none;
     }
-    .mb_bot_all_about{
-        /* margin-bottom: 17%; */
-    }
+    /* .mb_bot_all_about{
+         margin-bottom: 17%; 
+    } */
     .mb_bot_img_about{
         margin-bottom: 35%;
     }

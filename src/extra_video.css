@@ -85,8 +85,8 @@ transform: translate(-50%, -50%);
 text-align: center;
 } */
 
-@import url('');
-/* body {
+/* @import url('');
+body {
     background: #310404 url() no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -712,7 +712,6 @@ a {
     opacity: 1;
   }
   
-  /* xclip */
   .cd-headline.clip span {
     display: inline-block;
     padding: .2em 0;
@@ -752,7 +751,7 @@ a {
   
   .owl-theme .owl-dots .owl-dot.active span,
   .owl-theme .owl-dots .owl-dot:hover span {
-    /* background: url(../img/dot-actvie.png); */
+    /* background: url(../img/dot-active.png); */
     width: 16px;
     height: 16px;
   }

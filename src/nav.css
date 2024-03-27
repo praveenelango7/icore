@@ -26,10 +26,10 @@ nav,
 section {
     display: block;
 }
-/* a {
+a {
     color: #df1f29;
     text-decoration: none;
-} */
+}
 blockquote {
     padding: 10px 20px;
     color: #151515;
@@ -44,6 +44,7 @@ ul {
     padding-left: 0 !important;
     -webkit-padding-start: initial !important;
     -moz-padding-start: initial;
+    display: flex;
 }
 menu,
 
@@ -176,16 +177,16 @@ p {
     font-size: 19px;
     padding: .5em;
 }
-[class*="socicon-"] {
+.socicon- {
   display: inline-block;
   color: inherit;
   margin: 0;
   transition: opacity .3s ease;
 }
-#contact [class*="socicon-"] {
+.socicon- {
   padding-right: .7em;
 }
-[class*="socicon-"]:hover {
+.socicon-:hover {
   opacity: .4;
 }
 /* 1.3 Button */
@@ -340,7 +341,7 @@ p {
     color: #151515;
 }
 .hamburger-label:hover{
-    /* color:red;
+    color:red;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -349,7 +350,7 @@ p {
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition: .5s ease; */
+    transition: .5s ease; 
 }
 .hamburger.is-active .hamburger-label {
     color: #fff !important;
@@ -1336,7 +1337,7 @@ footer {
     }
 }
 
-/* Mmobile view custom css */
+/* Mobile view custom css */
 
 @media (min-width: 280px) and (max-width: 360px) {
   
@@ -1641,7 +1642,7 @@ nav {
     outline: none;
     z-index: 10; 
 }
-    .nav_hoveraa:after{
+    .nav_hover:after{
         display: block;
         position: absolute;
         left: 0;
@@ -1736,7 +1737,7 @@ nav {
   .dis_flex_top_nav{
     display: flex;
   }
-  .scoial_navbar{
+  .social_navbar{
     padding: 0px 2%;
     color: #fff;
     font-size: 14px
@@ -1774,7 +1775,7 @@ nav {
     display: inline-block;
     padding: 0 20px;
     width: 55%;
-    float: left;
+    /* float: left; */
     line-height: 66px;
 }
 .menu_new img {
@@ -1837,7 +1838,7 @@ nav {
   color:#000
 }
 .menu_new > ul > li:hover {
-  /* background: #f0f0f0; */
+   background: #f0f0f0; 
 }
 .menu_new > ul > li > ul {
      display: none;
@@ -2106,7 +2107,6 @@ Mobile style's
     -webkit-font-smoothing: antialiased;
 } */
 
-/* Noor */
 .ctm_top_nav{
     background-color: #f1f1f1;
     padding: 7px 7px 7px 25px;

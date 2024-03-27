@@ -382,7 +382,7 @@
 
 /* extra css */
 
-.row_divs_new {
+.row_div_new {
     position: relative;
     padding-top: 25px;
     padding-bottom: 67.5%;
@@ -812,7 +812,7 @@
         width: 100%;
         /* float: right; */
         /* height: 900px; */
-        background-image: url();
+        /* background-image: url(); */
         background-size: 100% 100%;
         /* width: 351px; */
         height: 696px;
@@ -838,7 +838,7 @@
         width: 100%;
         /* float: right; */
         /* height: 900px; */
-        background-image: url();
+      /*   background-image: url(); */
         background-size: 100% 65%;
         /* width: 351px; */
         height: 696px;
@@ -882,7 +882,7 @@
         width: 100%;
         /* float: right; */
         /* height: 900px; */
-        background-image: url();
+        /* background-image: url(); */
         background-size: 88% 44%;
         /* width: 351px; */
         height: 696px;
